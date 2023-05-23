@@ -11,7 +11,7 @@ fábrica de todos os tempos!" para a tela se a sequência inserida for "Spathiph
 imprime "Não, eu quero um grande Spathiphyllum!" se a sequência inserida for "spathiphyllum" (letra minúscula)
 imprime "Spathiphyllum! Not[input]!", Caso contrário. Nota: [input] é a string usada como entrada.
 
-
+#CODE
 plant = str(input("What is the name plant? "))
 
 if plant == "spathiphyllum":
