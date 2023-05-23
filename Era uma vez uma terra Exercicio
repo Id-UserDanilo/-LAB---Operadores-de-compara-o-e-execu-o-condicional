@@ -1,0 +1,19 @@
+#Se a renda do cidadão não era superior a 85.528 talões,
+#o imposto era igual a 18% da renda, menos 556 taller e 2 centavos 
+#(isso era o que eles chamavam de isenção de imposto)
+#se a receita fosse superior a esse valor, o imposto seria igual a 14.839 talões e 2 centavos, 
+#mais 32% do excedente em mais de 85.528 taller.
+
+receita = float(input("Digite sua renda:"))
+
+if receita > 85528: #Se a receita for superior
+    taxa = 14839.02 + 0.32 * (receita - 85528)
+    
+else: # Se a receita for inferior
+    taxa = 0.18 * receita - 556.02
+    
+if taxa < 0: #Se o imposto calculado for menor que zero
+  taxa=0
+  
+taxa = round(taxa, 0)
+print("A taxa é:", taxa, "thalers")
